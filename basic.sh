@@ -3,7 +3,7 @@
 # 打印绿色时间戳
 GREEN='\033[0;32m'  # 设置绿色颜色代码
 NC='\033[0m'       # 恢复默认颜色
-TIMESTAMP="$(date)"
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
 print_msg(){
     MSG=$1
