@@ -22,8 +22,9 @@ else
 fi
 
 if [[ "$(id -u)" != "0" ]];then  # 获取UID
-    print_msg "This script must be run as root. Please run with sudo." | tee -a /home/cofallen/Bash-code/log.txt
+    print_msg "This script must be run as root. Please run with sudo." | tee -a  /home/cofallen/Bash-code/log.txt
     exit 1
 fi
 
-print_msg "Shell script execution completed." | tee -a /home/cofallen/Bash-code/log.txt
+print_msg "Shell script execution completed."  >>  /home/cofallen/Bash-code/log.txt
+
