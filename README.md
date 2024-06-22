@@ -162,3 +162,40 @@ find /var/log -type f -exec grep "error" {} +
 这些是一些常见的与`grep`命令连用的示例，通过结合不同的命令，可以实现更加复杂和灵活的文本处理和搜索操作。
 
 
+### 添加Ubuntu镜像源
+
+查看ubuntu版本
+```shell
+cat /etc/issue
+```
+
+一般路径：
+```shell
+/etc/apt/source.list
+```
+
+下附一些常见的镜像源：
+
+```shell
+########   Ubuntu22.04LTS 清华镜像源   ###############
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+ 
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+```
+
+#### 更新镜像源
+
+```shell
+sudo apt-get update #更新软件列表
+sudo apt-get upgrade # 更新本地软件
+```

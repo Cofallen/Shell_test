@@ -1,1 +1,8 @@
-[0;32m[2024-06-07 11:59:43] Shell script execution completed.[0m
+[0;32m[2024-06-22 21:27:47] Shell script execution completed.[0m
+[0;32m[2024-06-22 21:27:47] cmake already install[0m
+[0;32m[2024-06-22 21:27:47] cmake version is too low. Update cmake...[0m
+Hit:1 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+Hit:2 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+Hit:3 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+Reading package lists...
+[0;32m[2024-06-22 21:27:47] cmake updated successfully.[0m
